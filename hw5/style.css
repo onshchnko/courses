@@ -13,40 +13,41 @@ body{
     color: #FFFFFF;
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 47px;
     font-size: 48px;
 }
-.cards-container{
-    margin: -40px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 15px;
+.cards-wrapper{
     max-width: 1076px;
+    margin: 0 auto;
 }
-.container image{
-    width: 148px;
-    height: 141px;
-}
+
 .card{
     padding-top: 23px;
-    margin-top: 85px;
+    padding-bottom: 15px;
+    margin-right: 30px;
+    margin-bottom: 25px;
     max-width: 237px;
     background-color: #FFFFFF;
     display: inline-block;
     text-align: center;
     border: 3px solid #000000;
 }
+.card image{
+    width: 148px;
+    height: 141px;
+    margin-bottom: 10px;
+}
 .card-title{
     font-weight: bold;
     font-size: 12px;
-    margin-top: 10px;
+    margin-bottom: 11px;
 }
 .card-information{
     font-weight: 400;
     font-size: 12px;
     line-height: auto;
-    padding-top: 11px;
     text-align: center;
+    margin-bottom: 22px;
 }
 .card button{
     width: 160px;
@@ -54,6 +55,9 @@ body{
     background-color: #6177EB;
     color: #FFFFFF;
     padding: 0;
-    border: 0;
-    margin: 20px 40px;
+    border: none;
+}
+
+.card:nth-child(4n){
+    margin-right: 0;
 }
