@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*navigation*/
+
+.nav-wrapper{
+    text-align: center;
+    background: #000;
+}
+.nav-list{
+    display: inline-block;
+    padding: 44px 0;
+}
+
+.nav-item{
+    display: inline-block;
+    padding-right: 53px;
+}
+.nav-link{
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*header-wrapper*/
+.header-wrapper{
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 44px;
+}
+.header-wrapper-description{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 58px;
+}
+.header-wrapper-title{
+    max-width: 575px;
+    margin-bottom: 37px;
+    font-size: 80px;
+    line-height: 87px;
+}
+.header-wrapper-text{
+    margin-bottom: 46px;
+    max-width: 530px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+.header-wrapper-input-box{
+    position: relative;
+    width: 390px;
+}
+.header-wrapper-input{
+    width: 390px;
+    height: 60px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 3px solid #000000;
+}
+.header-wrapper-btn{
+    position: absolute;
+    right: 0;
+    width: 110px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0 50px 50px 0;
+    border: 0;
+}
+
+.header-wrapper-img{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    padding-top: 73px;
+}
+.header-img{
+    width: 482px;
+    height: 573px;
+}
+/*step 1*/
+.step-section{
+    text-align: center; 
+    margin-bottom: 72px;
+}
+.step{
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.step-title{
+    font-size: 55px;
+}
+/* offer */
+.offer-wrapper{
+    background-color: #FCD0BA;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+.offer-img-box{
+    vertical-align: bottom;
+    display: inline-block;
+    padding-right: 54px;
+    margin-bottom: 0;
+}
+.offer-img{
+    width: 297px;
+}
+.offer-description, .cards-description{
+    display: inline-block;
+}
+.offer-start{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.offer-title{
+    font-size: 45px;
+    line-height: 48px;
+    max-width: 240px;
+    margin-bottom: 38px;
+}
+
+.list{
+    max-width: 370px;
+}
+.item{
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.checkbox{
+    width: 39px;
+    height: 39px;
+    margin-right: 20px;
+    display: inline-block; 
+}
+.item-text{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px; 
+    max-width: 306px;
+    vertical-align: top;
+} 
+
+/* cards */
+.cards-wrapper{
+    background-color: #CCD3E7;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.recommend{
+    max-width: 145px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+.cards-img-box{
+    display: inline-block;
+    padding-right: 24px;
+}
+.cards-title{
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 35px;
+}
+.cards-text{
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 380px;
+    margin-bottom: 32px;
+}
+.list-2{
+    max-width: 370px;
+    margin-bottom: 45px;
+}
+.cards-btn{
+    width: 155px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+}
+/* footer */
+.footer-wrapper{
+    background-color: #020016;
+}
+.footer{
+    position: relative;
+}
+.description{
+    max-width: 255px;
+    width: 49%;
+    display: inline-block;
+    padding-top: 110px;
+    padding-bottom: 230px;
+}
+.description-text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #B3B3B3;
+}
+.footer-sitemap{
+    position: absolute;
+    right: 0; 
+    display: inline-block;
+    padding-top: 83px;
+    text-align: right;
+    width: 49%;  
+}
+.footer-list{
+    display: inline-block;
+    padding-right: 40px;
+    text-align: left;
+    vertical-align: top;
+}
+.footer-list:last-child{
+    padding-right: 0;
+}
+.footer-item{
+    padding-bottom: 20px;
+}
+.footer-link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: 0;
+}
