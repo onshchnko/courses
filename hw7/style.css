@@ -12,9 +12,7 @@ body{
     margin: 0 auto;
     max-width: 1310px;
 }
-.container-large{
-    max-width: 1440px;
-}
+
 .container-small{
     max-width: 900px;
 }
@@ -327,7 +325,7 @@ body{
 .workspace-img-wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     column-gap: 16px;
     
 }
