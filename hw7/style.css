@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F5F3F4;
+    color: #12100C;
+    
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1310px;
+}
+.container-large{
+    max-width: 1440px;
+}
+.container-small{
+    max-width: 900px;
+}
+.navigation{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 48px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #12100C;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 24px;
+}
+.login-btn{
+    background-color: #12100C;
+    color: #F9F9F9;
+    font-size: 14px;
+    line-height: 20px;
+    width: 80px;
+    height: 32px;
+    border-radius: 12px;
+    border: 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+}
+.header-description{
+    padding-top: 140px;   
+}
+.header-img-box{
+    padding-top: 30px;
+}
+.header-title{
+    font-weight: 900;
+    font-size: 80px;
+    margin-bottom: 32px;
+}
+.header-text{
+    max-width: 460px;
+    font-size: 23px;
+    line-height: 32px;
+    opacity: 0.7;
+    margin-bottom: 48px;
+}
+.try-btn{
+    background-color: #FFAE33;
+    color: #12100C;
+    width: 160px;
+    height: 46px;
+    font-weight: bold;
+    line-height: 22px;
+    border: 0;
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 32px;
+}
+.btn-description{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.7;
+    max-width: 190px;
+}
+.header-btn-group{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+    margin-bottom: 16px;
+}
+.header-logos{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 28px;
+}
+.launch, .environment{
+    display: flex;
+    justify-content: space-between;   
+}
+.launch{
+    margin-bottom: 228px;
+}
+.environment{
+    margin-bottom: 303px;
+}
+.launch-title, .env-title{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 58px;
+}
+.launch-text, .env-text{
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 0.7;
+    max-width: 635px;
+    margin-bottom: 85px;
+}
+.launch-btn-group, .env-btn-group{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.prebuilds-btn, .documentation-btn{
+    font-size: 14px;
+    font-weight: bold;
+    color: #12100C;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 11px;
+}
+.prebuilds-btn{
+    background-color: #FFAE33;
+    
+}
+.documentation-btn{
+    background-color: #FFB0AE;
+}
+.remote, .remote-wrapper{
+    text-align: center;
+    margin-bottom: 178px;
+    
+}
+.remote-title{
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.gitpod-img-box{
+    margin-bottom: 50px;
+}
+.remote-text{
+    opacity: 0.7;
+    font-size: 24px;
+    line-height: 32px;
+    display: inline-block;
+    margin-bottom: 48px;
+    max-width: 900px;
+    
+}
+.remote-btn-group{
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+.google-btn, .firefox-btn{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #12100C;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+.dev-title{
+    text-align: center;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 48px;
+}
+.dev-cards{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    margin-bottom: 122px;
+}
+.card{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: start;
+}
+.card-p1{
+    margin-bottom: 8px;
+}
+.card-p2{
+    margin-bottom: 18px;
+}
+.dev-info{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 12px;
+}
+.dev-img{
+    height: 48px;
+}
+.make-bold{
+    font-weight: bold;
+}
+.dev-descr-name{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 170px;
+}
+.get-started-title{
+    text-align: center;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 72px;
+    margin-bottom: 78px;
+}
+.get-started{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 26px;
+    margin-bottom: 160px;
+}
+.get-started-box{
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 56px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+.box-title{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.box-paragraph1, .box-paragraph2{
+    font-size: 23px;
+    line-height: 32px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.get-started-btn-group{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.gitlab-btn, .github-btn, .bitbucket-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    flex: 1;
+    max-width: 262px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+
+}
+
+.gitlab-btn{
+    background-color: #FC6D26;
+    padding: 9px 50px 9px 33px;
+}
+.github-btn{
+    background-color: #000000;
+    padding: 9px 50px 9px 33px;
+}
+.bitbucket-btn{
+    background-color: #2684FF;
+    padding: 9px 33px;
+    
+}
+.launch-box-group{
+    margin-top: 32px;
+    margin-bottom: 88px;
+}
+.launch-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 12px 12px 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    
+}
+.workspace-img-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 16px;
+    
+}
+.workspace-img-wrapper p{
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 20px;
+}
+.launch-link{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 12px;
+    text-decoration: none;
+    
+}
+.footer-wrapper{
+    background-color: #F9F9F9;
+    
+}
+.footer{
+    padding: 48px 24px 0 24px;
+}
+.footer-sitemap{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 48px;
+}
+.footer-info-title{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #12100C;
+    opacity: 0.7;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #ECE7E5;
+    margin-bottom: 33px;
+}
+.footer-copyright-box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-logo-box{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+}
+.logo-text{
+    font-size: 13px;
+    opacity: 0.7;
+}
+.footer-media-logo{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+.star-box{
+    position: relative;
+}
+.star{
+    color: #FF8A00;
+    font-size: 10px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
