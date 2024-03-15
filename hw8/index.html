@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BEM</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="header container">
+        <nav class="navigation header__nav">
+          <div class="navigation__logo">
+            <img src="./img/logo.png" alt="logo" class="navigation__logo-img" />
+          </div>
+          <div class="navigation__aside">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">Products</p>
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="navigation__arrow"
+                  />
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">Prices</p>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">Buy</p>
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="navigation__arrow"
+                  />
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">OTC</p>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">Learn</p>
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="navigation__arrow"
+                  />
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <p class="navigation__name">Help</p>
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="navigation__arrow"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="navigation__buttons-group">
+              <button
+                class="button button_stroke button_small-12 navigation__button"
+                type="button"
+              >
+                Log in
+              </button>
+              <button
+                class="button button_small-12 navigation__button"
+                type="button"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="header-content">
+          <div class="header-content__aside">
+            <h1 class="header-content__title">
+              Buy, sell and trade crypto today
+            </h1>
+            <p class="header-content__text">
+              Trade with confidence and build your future with Australia’s
+              fastest crypto exchange.
+            </p>
+            <div class="header-content__buttons-group">
+              <button class="button header-content__button" type="button">
+                Get started
+              </button>
+              <button
+                class="button button_stroke header-content__button"
+                type="button"
+              >
+                View exchange
+              </button>
+            </div>
+          </div>
+          <div class="header-content__wrapper-img">
+            <img src="./img/phone.png" alt="" class="header-content__img" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-wrapper">
+      <div class="main container">
+        <section class="table-wrapper">
+          <div class="table__title-group">
+            <h3 class="table__title">Most Popular</h3>
+            <!--  hover -->
+            <h3 class="table__title table__title_disable">Top Movers</h3>
+          </div>
+          <div class="table">
+            <div class="table__row table__header">
+              <div class="cell">Asset</div>
+              <div class="cell">Last Price</div>
+              <div class="cell">24hr Change</div>
+              <div class="cell">Market Cap</div>
+            </div>
+            <div class="table__row">
+              <div class="table__row-aside">
+                <div class="cell table__asset-column">
+                  <img src="./img/XRP.png" alt=" " class="table__img" />
+                  <p class="table__img-name">XRP</p>
+                </div>
+                <div class="cell table__price-column">$0.5617</div>
+                <div class="cell table__change-column">1.57%</div>
+                <div class="cell table__cap-column">$28B</div>
+              </div>
+              <div class="table__button-box">
+                <button class="button table__button" type="button">Buy</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__row-aside">
+                <div class="cell table__asset-column">
+                  <img src="./img/bitcoin.png" alt=" " class="table__img" />
+                  <p class="table__img-name">Bitcoin</p>
+                </div>
+                <div class="cell table__price-column">$30,165.43</div>
+                <div
+                  class="cell table__change-column table__change-column_negative-change"
+                >
+                  -0.08%
+                </div>
+                <div class="cell table__cap-column">$582B</div>
+              </div>
+              <div class="table__button-box">
+                <button class="button table__button" type="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="table__row">
+              <div class="table__row-aside">
+                <div class="cell table__asset-column">
+                  <img src="./img/Ethereum.png" alt=" " class="table__img" />
+                  <p class="table__img-name">Ethereum</p>
+                </div>
+                <div class="cell table__price-column">$2,215.50</div>
+                <div
+                  class="cell table__change-column table__change-column_negative-change"
+                >
+                  -1.08%
+                </div>
+                <div class="cell table__cap-column">$267B</div>
+              </div>
+              <div class="table__button-box">
+                <button class="button table__button" type="button">Buy</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__row-aside">
+                <div class="cell table__asset-column">
+                  <img src="./img/Tether.png" alt=" " class="table__img" />
+                  <p class="table__img-name">Tether</p>
+                </div>
+                <div class="cell table__price-column">$1.4544</div>
+                <div class="cell table__change-column">2.36%</div>
+                <div class="cell table__cap-column">$96B</div>
+              </div>
+              <div class="table__button-box">
+                <button class="button table__button" type="button">Buy</button>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__row-aside">
+                <div class="cell table__asset-column">
+                  <img src="./img/enjin-coin.png" alt=" " class="table__img" />
+                  <p class="table__img-name">Enjin Coin</p>
+                </div>
+                <div class="cell table__price-column">$0.6129</div>
+                <div class="cell table__change-column">16.41%</div>
+                <div class="cell table__cap-column">$629M</div>
+              </div>
+              <div class="table__button-box">
+                <button class="button table__button" type="button">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="view-all">
+            <div class="view-all__img-group">
+              <div class="view-all__img-box view-all__img-box_z-index-1">
+                <img src="./img/bitcoin.png" alt=" " class="view-all__img" />
+              </div>
+              <div class="view-all__img-box view-all__img-box_z-index-2">
+                <img src="./img/Ethereum.png" alt=" " class="view-all__img" />
+              </div>
+              <div class="view-all__img-box view-all__img-box_z-index-3">
+                <img src="./img/Tether.png" alt=" " class="view-all__img" />
+              </div>
+              <div class="view-all__img-box view-all__img-box_z-index-4">
+                <img src="./img/XRP.png" alt=" " class="view-all__img" />
+              </div>
+            </div>
+            <div class="view-all__text-box">
+              <p class="view-all__text">View all markets</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
