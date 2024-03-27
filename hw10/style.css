@@ -8,10 +8,8 @@
     grid-template-rows: repeat(14, 1fr);
 }
 .decor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    place-items: center;
     color: white;
     font-size: 28px;
     min-height: 50px;
