@@ -2,19 +2,7 @@
     display: grid;
     height: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 6fr 2fr 2fr 2fr;
-}
-@media screen and (max-width: 1000px) {
-    .grid-container{
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
-    }
-}
-@media screen and (max-width: 770px) {
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2.5fr 2.5fr 2fr 2fr 2fr;
-    }
+    grid-template-rows: repeat(14, 1fr);
 }
 .decor{
     display: grid;
@@ -33,12 +21,7 @@
 }
 @media screen and (max-width: 1000px) {
     .header{
-        grid-column-end: 4;
-    }
-}
-@media screen and (max-width: 770px) {
-    .header{
-        grid-column-end: 2;
+        grid-column-end: 5;
     }
 }
 .menu{
@@ -52,12 +35,13 @@
     .menu{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 15;
     }
 }
 @media screen and (max-width: 770px) {
     .menu{
+        grid-column-end: 5;
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -67,18 +51,17 @@
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 9;
 }
 @media screen and (max-width: 1000px) {
     .hero{
-        grid-column-end: 4;
+        grid-row-end: 7;
     }
 }
 @media screen and (max-width: 770px) {
     .hero{
-        grid-column-end: 2;
         grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-end: 6;
     }
 }
 .main
@@ -86,90 +69,86 @@
     background-color: #202F42;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 13;
 }
 @media screen and (max-width: 1000px) {
     .main{
         grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-end: 4;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 11;
     }
 }
 @media screen and (max-width: 770px) {
     .main{
         grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 9;
     }
 }
 .image{
     background-color: #96B0B1;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 11;
 }
 @media screen and (max-width: 1000px) {
     .image{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 13;
+        grid-row-end: 15;
     }
 }
 @media screen and (max-width: 770px) {
     .image{
         grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        grid-column-end: 5;
     }
 }
 .extra{
     background-color: #429F82;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 13;
 }
 @media screen and (max-width: 1000px) {
     .extra{
         grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-column-end: 4;
+        grid-row-start: 13;
+        grid-row-end: 15;
     }
 }
 @media screen and (max-width: 770px) {
     .extra{
         grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column-end: 5;
+        grid-row-start: 11;
+        grid-row-end: 13;
     }
 }
 .banner{
     background-color: #DCB35B;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 13;
+    grid-row-end: 15;
 }
 @media screen and (max-width: 1000px) {
     .banner{
         grid-column-start: 2;
         grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 11;
+        grid-row-end: 13;
     }
 }
 @media screen and (max-width: 770px) {
     .banner{
         grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        grid-row-end: 11;
     }
 }
