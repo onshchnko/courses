@@ -6,17 +6,13 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .nav-wrapper {
   background-color: #0A0A0A;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-wrapper {
-    padding: 0 10px;
-  }
-}
 .nav__box {
   display: flex;
   justify-content: space-between;
@@ -26,34 +22,48 @@ body {
   padding: 31px 0px;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
   .nav__box {
     flex-direction: column;
-    row-gap: 10px;
-    padding: 10px 0;
-  }
-}
-@media screen and (max-width: 790px) {
-  .logo {
-    display: none;
+    row-gap: 15px;
+    padding: 15px 0;
   }
 }
 .nav__list {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  order: 1;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 400px) {
   .nav__list {
     flex-direction: column;
-    justify-content: center;
-    row-gap: 5px;
+    row-gap: 15px;
+  }
+}
+.logo {
+  order: 2;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    order: 1;
+  }
+}
+.contact {
+  order: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .nav__list {
+    order: 2;
   }
 }
 .nav__link {
   color: #717171;
   font-weight: 400;
+  align-items: stretch;
 }
 
 .header-content-wrapper {
@@ -62,7 +72,10 @@ body {
 }
 
 .header-content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
 }
 
 .header-content__title {
@@ -70,11 +83,6 @@ body {
   font-size: 64px;
   font-weight: bold;
   padding-top: 70px;
-  margin-bottom: 40px;
-}
-
-.header-content__img-box {
-  margin-bottom: 45px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -85,14 +93,10 @@ body {
        object-fit: cover;
   }
 }
-.header-content__btn-box {
-  padding-bottom: 40px;
-}
-
 .header-content__btn {
   background-color: #490E84;
   color: #FFFFFF;
-  padding: 20px 0;
+  padding: 20px 120px;
   max-width: 350px;
   width: 100%;
   font-weight: bold;
@@ -101,6 +105,11 @@ body {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 400px) {
+  .header-content__btn {
+    padding: 20px 50px;
+  }
+}
 .phone-choice__title {
   color: #717171;
   font-size: 32px;

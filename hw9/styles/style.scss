@@ -5,63 +5,73 @@ body{
 }
 .container{
     @include container(1200px);
+    padding: 0 15px;
 }
 
 .nav-wrapper{
     background-color: $color-black;
 }
-@media screen and (max-width: 1200px){
-    .nav-wrapper{
-        padding: 0 10px ;
-    }
-}
 .nav__box{
     @include display-header-footer(31px 0px);
 } 
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 800px){
     .nav__box{
         flex-direction: column;
-        row-gap: 10px;
-        padding: 10px 0;
-    }
-}
-@media screen and (max-width: 790px){
-    .logo{
-        display: none;
+        row-gap: 15px;
+        padding: 15px 0;
     }
 }
 .nav__list{
     display: flex;
     column-gap: 30px;
+    order: 1;
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 400px){
     .nav__list{
         flex-direction: column;
-        justify-content: center;
-        row-gap: 5px;
+        row-gap: 15px;
+    }
+    
+}
+.logo{
+    order: 2;
+}
+@media screen and (max-width: 800px){
+    .logo{
+        order: 1;
+    }
+}
+.contact{
+    order: 3;
+}
+@media screen and (max-width: 800px){
+    .nav__list{
+        order: 2;
     }
 }
 .nav__link{
     color: $color-grey;
     font-weight: 400;
+    align-items: stretch;
 }
+// /////////////////////////////////////////////////
 .header-content-wrapper{
     background-color: $header-background-color;
     margin-bottom: 70px;
 }
 .header-content{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
 }
 .header-content__title{
     color: $primary;
     font-size: $h1-size;
     font-weight: bold;
     padding-top: 70px;
-    margin-bottom: 40px;
-}
-.header-content__img-box{
-    margin-bottom: 45px;
+    
 }
 @media screen and (max-width: 1200px){
     .header-content__img{
@@ -69,22 +79,21 @@ body{
 
     }
 }
-
-.header-content__btn-box{
-    padding-bottom: 40px;
-}
-
 .header-content__btn{
     background-color: $primary;
     color: $color-white;
-    padding: 20px 0;
+    padding: 20px 120px;
     max-width: 350px;
     width: 100%;
     font-weight: bold;
     font-size: 24px;
     text-transform: uppercase;
     border-radius: 30px;
-    
+}
+@media screen and (max-width: 400px){
+    .header-content__btn{
+        padding: 20px 50px;
+    }
 }
 .phone-choice__title{
     color: $color-grey;
