@@ -1,0 +1,82 @@
+
+//-------------- nav
+.nav{
+    display: flex;
+    padding: 5px 35px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+// @media screen and (max-width: 1070px) {
+//     .nav{
+//         padding: 0;
+//     }
+// }
+@media screen and (max-width: 600px) {
+    .nav{
+       padding: 5px;
+    }
+}
+.menu__burger{
+    display: none;  
+}
+@media screen and (max-width: 875px) {
+    .menu__burger{
+        display: block;
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: $primary-color;
+    }
+    .menu__burger:focus ~ .menu__list{
+        display: flex;
+        flex-flow: column;
+    }
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    .menu__list{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .menu__list{
+        display: none;
+    }
+}
+.menu__link{
+    @include base-style($font-work, $semi-bold);
+}
+.menu__link:hover{
+    color: #a200ff;
+    transition: 0.2s;
+}
+
+.menu__button{
+    background-color: $call-to-action-color;
+    max-width: 152px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid $call-to-action-color;
+    padding: 20px 30px;
+    transition-duration: 0.5s;
+    @include base-style($font-work, $semi-bold);
+}
+.menu__button:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu__button:active{
+    background-color: $call-to-action-color;
+    cursor: pointer;
+}
+.menu__button-icon{
+    padding-right: 6px;
+}

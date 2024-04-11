@@ -1,0 +1,168 @@
+.creators{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 91px auto;
+    grid-template-areas:
+     "a a a b"
+     "d d d d";
+     row-gap: 60px;
+     margin-bottom: 40px;
+}
+@media screen and (max-width:1030px){
+    .creators{
+        grid-template-areas:
+        "a a b b"
+        "d d d d";
+    }
+}
+@media screen and (max-width:720px){
+    .creators{
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px auto 65px;
+        grid-template-areas:
+        "a"
+        "d"
+        "b";
+        row-gap: 40px;
+    }
+}
+.creators__title-box{
+    grid-area: a;
+}
+.creators__btn-box{
+    grid-area: b;
+    place-self: end;
+}
+.creator-card__wrapper{
+    grid-area: d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+@media screen and (max-width:1080px){
+    .creator-card__wrapper{
+        justify-content: space-around;
+    }
+}
+
+.title-template{
+    @include h3-style($font-work, $semi-bold);
+    margin-bottom: 10px;
+}
+.text-template{
+    @include base-style($font-work, $regular);
+    font-size: 22px;
+    margin-bottom: 60px;
+    line-height: 140%;
+}
+@media screen and (max-width:720px){
+    .creators__text{
+        margin-bottom: 0;
+    }
+}
+.creators__btn{
+    background-color: transparent;
+    max-width: 251px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid $call-to-action-color;
+    padding: 20px 50px;
+    transition-duration: 0.5s;
+    @include base-style($font-work, $semi-bold);
+}
+@media screen and (max-width:720px){
+    .creators__btn{
+        max-width: 315px;
+        ///////////////////////////////////////////////
+        padding: 20px 84px;
+        
+    }
+}
+@media screen and (max-width:720px){
+    .creators__btn-box{
+        place-self: center;
+    }
+}
+
+.creators__btn-img{
+    padding-right: 12px;
+}
+
+//---------------card
+.creator-card__box{
+    width: 240px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+}
+@media screen and (max-width:834px){
+    .creator-card__box{
+        width: 330px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+    }
+}
+.creator-card__num{
+    @include caption-style($font-space);
+    font-size: 16px;
+    background-color: $primary-color;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+@media screen and (max-width:834px){
+    .creator-card__num{
+        top: 13px;
+        left: 12px;
+    }
+}
+.creator-card__avatar{
+    padding-bottom: 20px;
+}
+@media screen and (max-width:834px){
+    .creator-card__avatar{
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width:834px){
+    .creator-card__img{
+        padding-bottom: 0;
+        width: 60px;
+        height: 60px;
+    }
+}
+.creator-card__username{
+    @include h5-style($font-work, $semi-bold);
+    line-height: 140%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+@media screen and (max-width:834px){
+    .creator-card__username{
+        text-align: left;
+    }
+}
+.creator-card__total-info{
+    display: flex;
+    gap: 10px;
+}
+.creator-card__total-name{
+    @include caption-style($font-work);
+    font-size: 16px;
+}
+.creator-card__total-sum{
+    @include base-style($font-space, $regular);
+    font-size: 16px;
+}

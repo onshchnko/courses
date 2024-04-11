@@ -1,0 +1,43 @@
+// --------------text style mixins
+@mixin h1-style($font-space, $bold){
+    font-family: $font-space;
+    font-size: 67px;
+    font-weight: $bold;
+    color: $text-color;
+}
+@mixin h2-style($font-space, $bold){
+    font-family: $font-space;
+    font-size: 51px;
+    font-weight: $bold;
+    color: $text-color;
+}
+@mixin h3-style($font-space, $bold){
+    font-family: $font-space;
+    font-size: 38px;
+    font-weight: $bold;
+    color: $text-color;
+}
+@mixin h4-style($font-space, $bold){
+    font-family: $font-space;
+    font-size: 28px;
+    font-weight: $bold;
+    color: $text-color;
+}
+@mixin h5-style($font-space, $bold){
+    font-family: $font-space;
+    font-size: 22px;
+    font-weight: $bold;
+    color: $text-color;
+}
+@mixin base-style($font-work, $regular){
+    font-family: $font-work;
+    font-size: 16px;
+    font-weight: $regular;
+    color: $text-color;
+}
+@mixin caption-style($font-space){
+    font-family: $font-space;
+    font-size: 12px;
+    font-weight: 400;
+    color: $caption-label-text-color;
+}

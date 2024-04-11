@@ -1,0 +1,51 @@
+.join-us__wrapper{
+    background-color: $secondary-color;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    padding: 60px;
+    margin-bottom: 80px;
+}
+.join-us__text{
+    margin-bottom: 40px;
+}
+.subscribe-form__input-box{
+    position: relative;
+    width: 420px;
+}
+.join-us__input{
+    width: 420px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    background-color: $text-color;
+    
+}
+.join-us__input::placeholder{
+    @include base-style($font-work, 400);
+    color: $primary-color;
+    padding-left: 20px;
+}
+.subscribe-form__btn{
+    background-color: $call-to-action-color;
+    transition-duration: 0.5s;
+    @include base-style($font-work, $semi-bold);
+    position: absolute;
+    right: 0;
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 0;
+}
+.copyright-box{
+    border-top: 1px solid $caption-label-text-color;
+    
+}
+.copyright-text{
+    @include base-style($font-work, 400);
+    padding: 20px 0;
+    color: $caption-label-text-color;
+}

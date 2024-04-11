@@ -1,0 +1,37 @@
+.footer__wrapper{
+    background-color: $secondary-color;
+}
+.sitemap__wrapper{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.sitemap__logo-link{
+    margin-bottom: 30px;
+}
+.sitemap__title{
+    @include h5-style($font-space, $bold);
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+.sitemap__box-text{
+    @include base-style($font-work, 400);
+    color:$caption-label-text-color;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+.col-1 {
+    max-width: 244px;
+}
+.col-3{
+    max-width: 420px;
+}
+.sitemap__logo-img{
+    margin-bottom: 30px;
+}
+.sitemap__item{
+    margin-bottom: 20px;
+}

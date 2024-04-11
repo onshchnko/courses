@@ -1,0 +1,135 @@
+
+// ------------header
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-areas:
+     "a c"
+     "b c";
+    column-gap: 30px;
+}
+@media screen and (max-width: 600px) {
+    .header-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+         "a"
+         "c"
+         "b";
+    }
+}
+.description-wrapper{
+    grid-area: a;
+}
+
+.description-title{
+    @include h1-style($font-work, $semi-bold);
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .description-title{
+        @include h3-style($font-work, $semi-bold);
+    }
+}
+.description-text{
+    @include h5-style($font-work, $regular);
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 950px) {
+    .description-text{
+        @include base-style($font-work, $regular)
+    }
+}
+.get-started-btn{
+    background-color: $call-to-action-color;
+    max-width: 224px;
+    border-radius: 20px;
+    padding: 20px 50px;
+    border: none;
+    transition-duration: 0.5s;
+    @include base-style($font-work, $semi-bold);
+    margin-bottom: 30px;
+}
+.get-started-btn:hover{
+    background-color: transparent;
+    border: 2px solid $call-to-action-color;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .get-started-btn{
+        background-color: $call-to-action-color;
+        width: 100%;
+        padding: 20px 95px;
+        max-width: 540px;
+        border: none;
+        @include base-style($font-work, $semi-bold);
+        margin: 40px auto;
+    }
+}
+
+.info-wrapper{
+    grid-area: b;
+}
+.info{
+    display: flex;
+    gap: 30px;
+}
+@media screen and (max-width: 750px) {
+    .info{
+        justify-content: space-around;
+    }
+}
+.info-number{
+    @include h4-style($font-space, $bold);
+    line-height: 140%;
+}
+@media screen and (max-width: 834px) {
+    .info-number{
+        @include h5-style($font-space, $bold);
+    }
+}
+.info-text{
+    line-height: 160%;
+    font-family: $font-work;
+    font-size: 24px;
+    font-weight: $regular;
+    color: $text-color;
+}
+@media screen and (max-width: 834px) {
+    .info-text{
+      @include base-style($font-work, $regular);
+    }
+}
+.avatar{
+    grid-area: c;
+}
+.header-img{
+    width: 100%;
+    object-fit: cover;
+}
+.avatar-box{
+    width: 100%;
+    background-color: $secondary-color;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 22px 20px;
+}
+.avatar-title{
+    @include h5-style($font-work, $semi-bold);
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+.avatar-user-box{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.avatar-username{
+    @include base-style($font-work, $regular);
+}
