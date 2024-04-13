@@ -728,12 +728,53 @@
           </div>
         </section>
       </div>
-      <!-- <section class="countdown-wrapper">
-        <img src="./img/mushroom.png" alt=" ">
+      <section class="countdown__wrapper">
         <div class="gradient-box"></div>
-      </section> -->
+        <img src="./img/mushroom.png" alt=" " class="countdown-img" />
+        <div class="container countdown-position">
+          <div class="countdown__inner-box">
+            <div class="countdown__avatar-box">
+              <button class="countdown__user">
+                <img
+                  src="./img/collections/avatar-card2.png"
+                  alt=" "
+                  class="countdown__avatar-img"
+                />
+                <p class="countdown__username">Shroomie</p>
+              </button>
+              <p class="countdown__title">Magic Mashrooms</p>
+            </div>
+
+            <div class="countdown__btn-box">
+              <button class="countdown__btn">
+                <img
+                  src="./img/discover/Eye.svg"
+                  alt=" "
+                  class="countdown__btn-img"
+                /><span>See all</span>
+              </button>
+            </div>
+
+            <div class="countdown__auction-box">
+              <p class="countdown__auction-title">Auction ends in:</p>
+              <div class="countdown__time-value-box">
+                <p class="countdown__time" id="hours">59</p>
+                <p class="countdown__time">:</p>
+                <p class="countdown__time" id="minutes">59</p>
+                <p class="countdown__time">:</p>
+                <p class="countdown__time" id="seconds">59</p>
+              </div>
+              <div class="countdown__time-name-box">
+                <p class="countdown__time-title">Hours</p>
+                <p class="countdown__time-title">Minutes</p>
+                <p class="countdown__time-title">Seconds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="container">
-        <!-- <section class="how-it-works__wrapper">
+        <section class="how-it-works__wrapper">
           <div class="how-it-works__title-box">
             <p class="how-it-works__title title-template">How it works</p>
             <p class="how-it-works__text text-template">
@@ -741,7 +782,7 @@
             </p>
           </div>
           <div class="how-it-works__cards-wrapper">
-            <div class="how-it-started__card-box">
+            <div class="how-it-works__card-box">
               <div class="how-it-works__img-box">
                 <img src="./img/wallet.png" alt=" " class="how-it-works__img" />
               </div>
@@ -753,7 +794,7 @@
                 </p>
               </div>
             </div>
-            <div class="how-it-started__card-box">
+            <div class="how-it-works__card-box">
               <div class="how-it-works__img-box">
                 <img
                   src="./img/collection.png"
@@ -769,7 +810,7 @@
                 </p>
               </div>
             </div>
-            <div class="how-it-started__card-box">
+            <div class="how-it-works__card-box">
               <div class="how-it-works__img-box">
                 <img
                   src="./img/earning.png"
@@ -786,10 +827,15 @@
               </div>
             </div>
           </div>
-        </section> -->
-        <!-- <section class="join-us__wrapper">
+        </section>
+        <section class="join-us__wrapper">
           <div class="join-us__img-box">
             <img src="./img/austronaut.png" alt=" " class="join-us__img" />
+            <img
+              src="./img/austronaut2.png"
+              alt=" "
+              class="join-us__img-adapt"
+            />
           </div>
           <div class="join-us__info-box">
             <div class="join-us__title-box">
@@ -801,13 +847,13 @@
               </div>
             </div>
 
-            <form action="#" class="subscribe-form">
-              <div class="subscribe-form__input-box">
+            <form action="#" class="join-us-form">
+              <div class="join-us-form__input-box">
                 <input
                   type="text"
                   class="join-us__input"
                   placeholder="Enter your email here"
-                /><button type="submit" class="subscribe-form__btn">
+                /><button type="submit" class="join-us__btn">
                   <img
                     src="./img/envelope.svg"
                     alt=" "
@@ -818,22 +864,21 @@
               </div>
             </form>
           </div>
-        </section> -->
+        </section>
       </div>
     </main>
-    <!-- <footer class="footer__wrapper">
+    <footer class="footer__wrapper">
       <div class="container">
         <div class="sitemap__wrapper">
           <div class="sitemap__box col-1">
             <a href="#" class="sitemap__title"
               ><img src="./img/logo.svg" alt="" class="sitemap__logo-img"
             /></a>
-            <p class="sitemap__box-text ">
+            <p class="sitemap__box-text">
               NFT marketplace UI created with Anima for Figma.
             </p>
-            <p class="sitemap__box-text ">Join our community</p>
+            <p class="sitemap__box-text">Join our community</p>
             <div class="sitemap__logos-box">
-              
               <a href="#" class="social-link"
                 ><img
                   src="./img/DiscordLogo.svg"
@@ -865,13 +910,17 @@
             <p class="sitemap__title">Explore</p>
             <ul class="sitemap__list">
               <li class="sitemap__item">
-                <a href="#" class="sitemap__link sitemap__box-text ">Marketplace</a>
+                <a href="#" class="sitemap__link sitemap__box-text"
+                  >Marketplace</a
+                >
               </li>
               <li class="sitemap__item">
-                <a href="#" class="sitemap__link sitemap__box-text ">Rankings</a>
+                <a href="#" class="sitemap__link sitemap__box-text">Rankings</a>
               </li>
               <li class="sitemap__item">
-                <a href="#" class="sitemap__link sitemap__box-text ">Connect a wallet</a>
+                <a href="#" class="sitemap__link sitemap__box-text"
+                  >Connect a wallet</a
+                >
               </li>
             </ul>
           </div>
@@ -880,21 +929,23 @@
             <p class="sitemap__box-text">
               Get exclusive promotions & updates straight to your inbox.
             </p>
-            <form action="#" class="subscribe-form">
-              <div class="subscribe-form__input-box">
+            <form action="#" class="sitemap-form">
+              <div class="sitemap-form__input-box">
                 <input
                   type="text"
-                  class="join-us__input"
+                  class="sitemap-form__input"
                   placeholder="Enter your email here"
-                /><button type="submit" class="subscribe-form__btn">
+                /><button type="submit" class="sitemap-form__btn">
                   Subscribe
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="copyright-box"><p class="copyright-text">Ⓒ NFT Market. Use this template freely.</p></div>
+        <div class="copyright-box">
+          <p class="copyright-text">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

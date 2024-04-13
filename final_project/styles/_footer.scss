@@ -4,10 +4,20 @@
 .sitemap__wrapper{
     margin-top: 40px;
     margin-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-around;
+}
+@media screen and (max-width:920px) {
+    .sitemap__wrapper{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:880px) {
+    .sitemap__wrapper{
+        flex-direction: column;
+        row-gap: 30px;
+    }
 }
 .sitemap__logo-link{
     margin-bottom: 30px;
@@ -17,11 +27,75 @@
     line-height: 160%;
     margin-bottom: 30px;
 }
+@media screen and (max-width:880px) {
+    .sitemap__title{
+        margin-bottom: 20px;
+    }
+}
 .sitemap__box-text{
     @include base-style($font-work, 400);
     color:$caption-label-text-color;
     line-height: 140%;
     margin-bottom: 20px;
+}
+@media screen and (max-width:465px) {
+    .sitemap-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.sitemap-form__input-box{
+    position: relative;
+    width: 420px;
+}
+@media screen and (max-width:465px) {
+    .sitemap-form__input-box{
+        width: 300px;
+        position: static;
+    }
+}
+
+
+.sitemap-form__input{
+    width: 420px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    background-color: $text-color;
+    
+}
+@media screen and (max-width:465px) {
+    .sitemap-form__input{
+        width: 300px;
+        height: 46px;
+        margin-bottom: 16px;
+    }
+}
+.sitemap-form__input::placeholder{
+    @include base-style($font-work, 400);
+    color: $primary-color;
+    padding-left: 20px;
+}
+.sitemap-form__btn{
+    background-color: $call-to-action-color;
+    transition-duration: 0.5s;
+    @include base-style($font-work, $semi-bold);
+    position: absolute;
+    right: 0;
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 0;
+}
+@media screen and (max-width:465px) {
+    .sitemap-form__btn{
+        width: 300px;
+        position: static;
+        height: 46px;
+    }
 }
 .col-1 {
     max-width: 244px;

@@ -44,12 +44,11 @@
 }
 .discover__btn{
     background-color: transparent;
-    max-width: 191px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 2px solid $call-to-action-color;
     padding: 19px 50px;
-    transition-duration: 0.5s;
+    transition: 0.5s;
     @include base-style($font-work, $semi-bold);
 }
 @media screen and (max-width:720px){

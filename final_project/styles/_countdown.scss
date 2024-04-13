@@ -1,12 +1,148 @@
-
-.countdown-wrapper{
-    background-image:
-    linear-gradient(0deg, rgba(162,89,255,1) 0%, rgba(255,255,255,0) 100%),
-    url('../img/mushroom.png');
+.countdown__wrapper{
+    position: relative;
+}
+.gradient-box{
+    background:
+    linear-gradient(0deg, rgba(162,89,255,1) 0%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    top: 0;
+    z-index: 2;
     width: 100%;
-    height: 100%;
+    height: 640px;
+}
+@media screen and (max-width: 615px){
+    .gradient-box{
+        height: 593px;
+    }
+}
+.countdown-img{
+    width: 100%;
     height: 640px;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    
+}
+@media screen and (max-width: 615px){
+    .countdown-img{
+        height: 593px;
+    }
+}
+.countdown__inner-box{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px 60px 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "a c"
+    "b c";
+      
+}
+@media screen and (max-width: 615px){
+    .countdown__inner-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "a"
+        "c"
+        "b";
+    }
+}
+.countdown-position{
+    position: relative;
+}
+.countdown__avatar-info-box{
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.countdown__avatar-box{
+    grid-area: a;
+}
+.countdown__user{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 151px;
+    margin-bottom: 30px;
+}
+.countdown__username{
+    @include base-style($font-work, $regular);
+}
+.countdown__title{
+    @include h2-style($font-work, $semi-bold);
+    margin-bottom: 30px;
+}
+.countdown__btn{
+    background-color: $text-color;
+    color: $primary-color;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    padding: 19px 50px;
+    transition: 0.5s;
+    @include base-style($font-work, $semi-bold);
+}
+@media screen and (max-width: 615px){
+    .countdown__btn-box{
+       padding: 19px 108px; 
+    }
+}
+.countdown__btn-img{
+    padding-right: 12px;
+}
+.countdown__btn span{
+    color: $primary-color;
+}
+.countdown__btn-box{
+    grid-area: b;
+}
+.countdown__auction-box{
+    max-width: 295px;
+    display: flex;
+    align-self: end;
+    justify-self: end;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    grid-area: c;
+}
+@media screen and (max-width: 615px){
+    .countdown__auction-box{
+        place-self: center;
+        margin-bottom: 30px;
+    }
+}
+
+.countdown__auction-title{
+    @include caption-style($font-space);
+    color: $text-color;
+}
+.countdown__time-value-box{
+    display: flex;
+    column-gap: 10px;
+}
+.countdown__time-name-box{
+    display: flex;
+    justify-content: space-between;
+}
+.countdown__time{
+    @include h3-style($font-space, $bold);
+}
+.countdown__time-title{
+    @include caption-style($font-space);
+    color: $text-color;
+    max-width: 81px;
 }
